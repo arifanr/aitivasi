@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'nunito-black';
+    src: url('../fonts/NunitoSans-Black.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-bold';
+    src: url('../fonts/NunitoSans-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-extrabold';
+    src: url('../fonts/NunitoSans-ExtraBold.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-extralight';
+    src: url('../fonts/NunitoSans-ExtraLight.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-italic';
+    src: url('../fonts/NunitoSans-Italic.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-light';
+    src: url('../fonts/NunitoSans-Light.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-medium';
+    src: url('../fonts/NunitoSans-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-regular';
+    src: url('../fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-semibold';
+    src: url('../fonts/NunitoSans-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+.nunito-black       { font-family: 'nunito-black'; }
+.nunito-bold        { font-family: 'nunito-bold'; }
+.nunito-extrabold   { font-family: 'nunito-extrabold'; }
+.nunito-extralight  { font-family: 'nunito-extralight'; }
+.nunito-italic      { font-family: 'nunito-italic'; }
+.nunito-light       { font-family: 'nunito-light'; }
+.nunito-medium      { font-family: 'nunito-medium'; }
+.nunito-regular     { font-family: 'nunito-regular'; }
+.nunito-semibold    { font-family: 'nunito-semibold'; }
+
+@font-face {
+    font-family: 'opensans-bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans-italic';
+    src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans-light';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans-medium';
+    src: url('../fonts/OpenSans-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans-regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'opensans-semiBold';
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+.opensans-bold        { font-family: 'opensans-bold'; }
+.opensans-italic      { font-family: 'opensans-italic'; }
+.opensans-light       { font-family: 'opensans-light'; }
+.opensans-medium      { font-family: 'opensans-medium'; }
+.opensans-regular     { font-family: 'opensans-regular'; }
+.opensans-semibold    { font-family: 'opensans-semibold'; }
