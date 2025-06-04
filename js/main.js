@@ -31,3 +31,39 @@ window.addEventListener("scroll", function() {
         deco_home.classList.remove("d-none");
     }
 });
+
+
+const texts = [
+    "Your partner in IT solution and innovation. "
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+
+function type() {
+    const typedText = document.getElementById("typed-text");
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+        typedText.textContent = currentText.substring(0, charIndex--);
+        typingSpeed = 50;
+    } else {
+        typedText.textContent = currentText.substring(0, charIndex++);
+        typingSpeed = 100;
+    }
+
+    if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        typingSpeed = 1500; // Pause before deleting
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typingSpeed = 500; // Pause before typing next
+    }
+
+    setTimeout(type, typingSpeed);
+}
+
+document.addEventListener("DOMContentLoaded", type);

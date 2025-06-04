@@ -80,13 +80,32 @@ section {
         top: 5px;
     }
 }
+.typing-container {
+    font-family: monospace;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
 #home{
     position: relative;
     .root {
         height: 750px;
-        background: linear-gradient(30deg, #029CF5 30%, #2CBFC7 60%, #15EDED 90%, #46EEAA 150% );
+        background: linear-gradient(30deg, rgba(2, 156, 245, .5) 30%, rgba(44, 196, 199, .5) 60%, rgba(21, 237, 221, .5) 90%, rgba(70, 238, 170, .5) 150% ), url('../images/unand.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         padding: 140px 0 120px;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .decoration {
             .left-deco {
                 height: 1500px;
@@ -244,6 +263,9 @@ section {
             opacity: .2;;
             transform: scaleX(1.7);
             fill: #46EEAA;
+            @media (min-width: 1720px) {
+                transform: scaleX(2.5);
+            }
         }
     }
 }
@@ -326,11 +348,20 @@ footer {
         position: relative;
         z-index: 10;
     }
+    .partner {
+        padding-left: 2rem;
+    }
     @media (max-width: 991px) {
         padding-top: 14rem;
+        .partner {
+            padding-left: 0;
+        }
     }
     @media (max-width: 767px) {
         padding-top: 12rem;
+        .partner {
+            padding-left: 1.5rem;
+        }
     }
     @media (max-width: 576px) {
         padding-top: 10rem;
