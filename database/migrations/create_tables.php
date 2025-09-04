@@ -38,7 +38,7 @@ return new class extends Migration
 
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id()->autoIncrement()->primary();
-            $table->string('title');
+            $table->string('name');
             $table->string('description')->nullable();
             $table->string('image');
             $table->string('link')->nullable();
@@ -53,7 +53,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('image')->nullable();
             $table->string('link')->nullable();
-            $table->text('description')->nullable();
+            $table->text('description');
             $table->timestamp('created_at')->useCurrent();
             $table->string('created_by')->default('system');
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate()->nullable();

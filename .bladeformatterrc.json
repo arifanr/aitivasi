@@ -1,0 +1,15 @@
+{
+  "indentSize": 2,
+  "wrapAttributes": "auto",
+  "wrapAttributesMinAttrs": 2,
+  "wrapLineLength": 220,
+  "endWithNewLine": true,
+  "noMultipleEmptyLines": false,
+  "useTabs": false,
+  "sortHtmlAttributes": "none",
+  "noPhpSyntaxCheck": false,
+  "noSingleQuote": false,
+  "noTrailingCommaPhp": false,
+  "componentPrefix": ["x-", "livewire:"],
+  "phpVersion": "8.4"
+}

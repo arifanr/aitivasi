@@ -18,7 +18,7 @@ class Portfolio extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'title',
+        'name',
         'description',
         'image',
         'link',
